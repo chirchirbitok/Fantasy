@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    tools:context=".Home">
+
+
+    <Button
+        android:id="@+id/profitnlosses"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="131dp"
+        android:text="PROFIT n LOSSES "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disease" />
+
+    <Button
+        android:id="@+id/points"
+        android:layout_width="93dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="50dp"
+        android:text="POINTS"
+        app:layout_constraintBottom_toTopOf="@+id/transfer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/favourite"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="13dp"
+        android:text="FAVOURITE"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transfer" />
+
+    <Button
+        android:id="@+id/transfer"
+        android:layout_width="97dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="TRANSFER"
+        app:layout_constraintBottom_toTopOf="@+id/favourite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/points" />
+
+    <Button
+        android:id="@+id/dreamteam"
+        android:layout_width="153dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="27dp"
+        android:text="DREAM TEAM"
+        app:layout_constraintBottom_toTopOf="@+id/makingpurchase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/makingpurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="MAKING PURCHASE"
+        app:layout_constraintBottom_toTopOf="@+id/disease"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dreamteam" />
+
+    <Button
+        android:id="@+id/disease"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="19dp"
+        android:text="DISEASES"
+        app:layout_constraintBottom_toTopOf="@+id/profitnlosses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/makingpurchase" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="240dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:text="FANTASY FARMING"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/points"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="415dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="28dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/dreamteam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favourite" />
+
+
+ </androidx.constraintlayout.widget.ConstraintLayout>

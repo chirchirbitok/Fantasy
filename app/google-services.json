@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "346641643772",
+    "firebase_url": "https://fantasy-sheep-application.firebaseio.com",
+    "project_id": "fantasy-sheep-application",
+    "storage_bucket": "fantasy-sheep-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346641643772:android:134db0614beafdec143f79",
+        "android_client_info": {
+          "package_name": "com.example.fantasysheepapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346641643772-nfia4g9mi6g3du1ijvbn6ckl8gqnu0ur.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fantasysheepapplication",
+            "certificate_hash": "dcd43cac2754382e912602589897e1a996c581f8"
+          }
+        },
+        {
+          "client_id": "346641643772-oj32hhhtp6qmg1vrr8u853e8bn4hmcbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhBIyloFSOhPHJ9i4AW75K5fazLwleaJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346641643772-oj32hhhtp6qmg1vrr8u853e8bn4hmcbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
