@@ -7,6 +7,7 @@
     android:background="@drawable/images"
     tools:context=".Points">
 
+
     <LinearLayout
         android:id="@+id/layout"
         android:orientation="vertical"
@@ -138,18 +139,21 @@
                     android:textColor="#000000"
                     android:textSize="18sp" />
 
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="745dp"
+                    tools:layout_editor_absoluteY="-51dp"
+                    android:layout_marginTop="30dp">
 
+                </androidx.recyclerview.widget.RecyclerView>
             </RelativeLayout>
 
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView2"
-            android:layout_width="match_parent"
-            android:layout_height="351dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
+
 
 
     </LinearLayout>

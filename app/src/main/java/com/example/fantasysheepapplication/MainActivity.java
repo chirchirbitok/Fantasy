@@ -35,7 +35,7 @@ import javax.annotation.Nullable;
 
 
 public class MainActivity extends AppCompatActivity {
-    CardView mPoint;
+    CardView mMarket, mPoints;
     TextView fullName , email, phone;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -51,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
         phone = findViewById(R.id.profilePhone);
         fullName = findViewById(R.id.profileName);
         email = findViewById(R.id.profileEmail);
-        mPoint = findViewById(R.id.Points);
+        mPoints = findViewById(R.id.Points);
+        mMarket = findViewById(R.id.Market);
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -72,12 +73,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        mPoint.setOnClickListener(new View.OnClickListener() {
+        mMarket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),MainActivity2_market.class));
             }
         });
+
+        mPoints.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Points.class));
+            }
+        });
+
 
 
     }
