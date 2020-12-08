@@ -39,10 +39,10 @@ public class PointsAdapter extends RecyclerView.Adapter<PointsAdapter.PointsView
 
         PointsConstructor pointsConstructor = pointsConstructorList.get(position);
 
-        holder.textViewName.setText(pointsConstructor.getSheep_id());
-        holder.textViewGender.setText(pointsConstructor.getGender_id());
-        holder.textViewBirth.setText(pointsConstructor.getNumber_of_births());
-        holder.textViewPoints.setText(pointsConstructor.getNumber_of_points());
+        holder.textViewName.setText(String.valueOf(pointsConstructor.getSheep_id()));
+        holder.textViewGender.setText(String.valueOf(pointsConstructor.getGender_id()));
+        holder.textViewBirth.setText(String.valueOf(pointsConstructor.getNumber_of_births()));
+        holder.textViewPoints.setText(String.valueOf(pointsConstructor.getNumber_of_points()));
 
     }
 

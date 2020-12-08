@@ -15,6 +15,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,7 +29,7 @@ public class Points extends AppCompatActivity {
     PointsAdapter adapter;
     List<PointsConstructor>  pointsConstructorList;
 
-    private static  final  String PRODUCT_URL = "http://192.168.100.17/SheepFantasyapp/connection.php";
+    private static  final  String PRODUCT_URL = "http://192.168.100.17/SheepFantasyapp/pointsConnection.php";
 
 
     @Override
@@ -80,6 +81,7 @@ public class Points extends AppCompatActivity {
                 Toast.makeText(Points.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
     });
+        Volley.newRequestQueue(this).add(stringRequest);
     }
 
 }
