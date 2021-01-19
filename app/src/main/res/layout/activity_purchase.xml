@@ -1,82 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/images"
-    tools:context=".Purchase">
+    tools:context=".Points">
 
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/download" />
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="302dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="36dp"
-        android:background="#37BC19"
-        android:text="    Make Purchase"
-        android:textColor="#FFFFFF"
-        android:textSize="35sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textVie"
-        android:layout_width="245dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="24dp"
-        android:background="#238585"
-        android:text="Sheep Type"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.386"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            <TextView
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="127dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="36dp"
-        android:text="1. Wool"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.262"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textVie" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp">
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="126dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
-        android:text="2. Dairy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.262"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
+            </TextView>
 
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="130dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="16dp"
-        android:text="3. Meat"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <GridLayout
+            android:columnCount="2"
+            android:rowCount="3"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:src="@drawable/bluesheephi">
+
+                    </ImageView>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </GridLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp">
+                <TextView
+                    android:id="@+id/imageView2"
+                    android:text="Info"
+                    android:textSize="18sp"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:adjustViewBounds="false"
+                    android:textColor="#000000">
+
+                </TextView>
+
+
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="120dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:text="Purchased Item"
+                    android:gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/textViewBirth"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/textViewTitle"
+                    android:text="Purchased Date"
+                    android:textColor="#000000"
+                    android:textSize="16sp">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/textViewPoints"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/textViewBirth"
+                    android:text="Points"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="745dp"
+                    tools:layout_editor_absoluteY="-51dp"
+                    android:layout_marginTop="30dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
