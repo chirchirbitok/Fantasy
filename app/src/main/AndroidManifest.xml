@@ -17,7 +17,7 @@
         <activity android:name=".BoughtSheep" />
         <activity android:name=".Market" />
         <activity android:name=".FemaleFeatures" />
-        <activity android:name=".ProfitLoses" />
+        <activity android:name=".ProfitLoss" />
         <activity android:name=".Diseases" />
         <activity android:name=".Male_Features" />
         <activity android:name=".Gender" />

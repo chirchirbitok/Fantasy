@@ -24,7 +24,7 @@ public class Favourite extends AppCompatActivity {
 
     RecyclerView recyclerView_FT;
     FavouriteAdapter adapter;
-    List<FavouriteAdapter> FavouriteAdapter_List;
+    List<favouriteConstructor> favouriteConstructorList;
 
     private static  final  String PRODUCT_URL = "http://192.168.100.17/SheepFantasyapp/favorite_rd.php";
 
@@ -34,7 +34,7 @@ public class Favourite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favourite);
 
-        FavouriteAdapter_List = new ArrayList<>();
+        favouriteConstructorList = new ArrayList<>();
         recyclerView_FT= (RecyclerView) findViewById(R.id.recyclerView_FT);
         recyclerView_FT.setHasFixedSize(true);
         recyclerView_FT.setLayoutManager(new LinearLayoutManager(this));
@@ -61,10 +61,10 @@ public class Favourite extends AppCompatActivity {
                         String favorite = favouriteTeamObject.getString("favorite");
 
                         favouriteConstructor favouriteConstructor1 = new favouriteConstructor(sheep_id, sheep_name, age_id, breed_id, gender_id, point_id, favorite);
-                        FavouriteAdapter_List.add(favouriteConstructor1);
+                        favouriteConstructorList.add(favouriteConstructor1);
 
                     }
-                    adapter = new FavouriteAdapter(Favourite.this, FavouriteAdapter_List);
+                    adapter = new FavouriteAdapter(Favourite.this, favouriteConstructorList);
                     recyclerView_FT.setAdapter(adapter);
 
 

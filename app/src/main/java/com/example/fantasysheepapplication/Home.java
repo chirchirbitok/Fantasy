@@ -1,7 +1,6 @@
 package com.example.fantasysheepapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -74,7 +73,7 @@ public class Home extends AppCompatActivity {
         mprofitnlosses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),ProfitLoses.class));
+                startActivity(new Intent(getApplicationContext(), ProfitLoss.class));
             }
         });
     }
