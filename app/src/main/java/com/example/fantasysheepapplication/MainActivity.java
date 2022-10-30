@@ -36,7 +36,7 @@ import javax.annotation.Nullable;
 
 public class MainActivity extends AppCompatActivity {
     CardView mMarket, mPoints, mTransfer;
-    TextView fullName , email, phone;
+    //TextView fullName , email, phone;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userId;
@@ -48,9 +48,9 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        phone = findViewById(R.id.profilePhone);
-        fullName = findViewById(R.id.profileName);
-        email = findViewById(R.id.profileEmail);
+        //phone = findViewById(R.id.profilePhone);
+        //fullName = findViewById(R.id.profileName);
+        //email = findViewById(R.id.profileEmail);
         mPoints = findViewById(R.id.Points);
         mMarket = findViewById(R.id.Market);
         mTransfer = findViewById(R.id.Transfer);
@@ -63,15 +63,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        DocumentReference documentReference = fStore.collection("users").document(userId);
-        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
-            @Override
-            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
-                phone.setText(documentSnapshot.getString("phone"));
-                fullName.setText(documentSnapshot.getString("fName"));
-                email.setText(documentSnapshot.getString("email"));
-            }
-        });
+//        DocumentReference documentReference = fStore.collection("users").document(userId);
+//        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+//            @Override
+//            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
+//                phone.setText(documentSnapshot.getString("phone"));
+//                fullName.setText(documentSnapshot.getString("fName"));
+//                email.setText(documentSnapshot.getString("email"));
+//            }
+//        });
 
 
 

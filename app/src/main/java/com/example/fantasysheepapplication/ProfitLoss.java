@@ -33,7 +33,7 @@ public class ProfitLoss extends AppCompatActivity {
         setContentView(R.layout.activity_profit_loss);
 
         profitLossConstructorList = new ArrayList<>();
-        recyclerProfitLoss = (RecyclerView) findViewById(R.id.recyclerProfitLoss);
+        //recyclerProfitLoss = (RecyclerView) findViewById(R.id.recyclerProfitLoss);
         recyclerProfitLoss.setHasFixedSize(true);
         recyclerProfitLoss.setLayoutManager(new LinearLayoutManager(this));
 
