@@ -22,6 +22,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
@@ -53,7 +54,12 @@ public class Login extends AppCompatActivity {
         forgotTextLink = findViewById(R.id.forgotPassword);
 
         fStore = FirebaseFirestore.getInstance();
-        userId = fAuth.getCurrentUser().getUid();
+        FirebaseUser currentUser = fAuth.getCurrentUser();
+        if (currentUser!= null){
+            userId = currentUser.getUid();
+
+        }
+        //userId = fAuth.getCurrentUser().getUid();
 
 
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
@@ -84,9 +90,9 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
+                            Toast.makeText(Login.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(Login.this, MainActivity.class);
                             startActivity(intent);
-                            Toast.makeText(Login.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
                             //startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }else {
                             Toast.makeText(Login.this, "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();

@@ -30,7 +30,7 @@ public class Home extends AppCompatActivity {
         mpoints.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),MainActivity2_market.class));
+
             }
         });
 
@@ -44,28 +44,28 @@ public class Home extends AppCompatActivity {
         mfavourite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Dream_Team.class));
+
             }
         });
 
         mdreamteam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Dream_Team.class));
+
             }
         });
 
         mmakingpurchase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Purchase.class));
+
             }
         });
 
         mdisease.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Diseases.class));
+
             }
         });
 
@@ -73,7 +73,7 @@ public class Home extends AppCompatActivity {
         mprofitnlosses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), ProfitLoss.class));
+
             }
         });
     }

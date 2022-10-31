@@ -78,21 +78,21 @@ public class MainActivity extends AppCompatActivity {
         mTransfer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), BoughtSheep.class));
+
             }
         });
 
         mPoints.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Points.class));
+
             }
         });
 
         mMarket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),MainActivity2_market.class));
+
             }
         });
 
